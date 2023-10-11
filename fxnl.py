@@ -10,9 +10,6 @@ serialPort = serial.Serial(
 print("Starting test...\n")
 serialPort.write(b'sr\r')
 time.sleep(7)
-#serialPort.write(b'l 0 0 0\r')
-
-#time.sleep(1)
 
 print("Turn LED Red\n")
 serialPort.write(b'l 0\r')
